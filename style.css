@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixa-maior {
+    background-color: rgba(27, 27, 27, 0.521);
+    width: 430px;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+button {
+    border-radius: 50px;
+    padding: 10px;
+    float: right;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+img {
+    height: 25px;
+}
