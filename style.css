@@ -63,11 +63,21 @@ img {
     align-items: center;
     gap: 20px;
     line-height: 30px;
+    text-transform: capitalize;
+}
+
+.caixa-media span {
+    display: inline-block;
 }
 
 .caixa-media p {
     font-size: 22px;
     font-weight: bold;
+}
+
+.caixa-media img {
+    width: 64px;
+    height: 64px;
 }
 
 .contain {
