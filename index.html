@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +12,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 </head>
+
 <body>
 
     <div class="caixa-maior">
 
-        <input type="text" placeholder="Cidade" id="input">
-        <button>
-            <img src="3917754.png" alt="Buscar">
-        </button>
+        <div class="header">
+            <input type="text" placeholder="Cidade" id="input">
+            <button id="search">
+                <img src="3917754.png" alt="Buscar">
+            </button>
+        </div>
 
-        <div caixa-media>
-            <h2 class="local">Temperatura em itararé</h2>
-            <p class="temp">25C</p>
+        <div class="caixa-media">
+            <h2 class="local">Cidade</h2>
+            <div class="contain">
+                <p class="temp-min">Min: 25°C</p>
+                <p class="temp-max">Min: 25°C</p>
+            </div>
+            <img src="" alt="nuvens">
             <p class="nuvens">Nuvens dispersas</p>
-            <p class="umidade">Umidade</p>
+            <p class="umidade">Umidade: 70%</p>
         </div>
 
     </div>
-    
+
 </body>
+
 </html>
