@@ -3,8 +3,13 @@ const chave = "b52ce29f09736d8f430fdf05f38069e2"
 let button = document.querySelector("#search");
 button.addEventListener("click", function clicar() {
     let cidade = document.querySelector("#input").value
+    if(cidade == ''){
+        return
+    } else {
+        buscarCidade(cidade)
+    }
     
-    buscarCidade(cidade)
+
 })
 
 async function buscarCidade(cidade) {
@@ -14,6 +19,9 @@ async function buscarCidade(cidade) {
     chave + 
     "&lang=pt_br" + 
     "&units=metric").then(resposta => resposta.json())
+    // if (dados.message == "city not found" || dados.cod == "404") {
+    //     return dados
+    // }
 
     colocarNaTela(dados)
 }
