@@ -19,9 +19,9 @@ async function buscarCidade(cidade) {
     chave + 
     "&lang=pt_br" + 
     "&units=metric").then(resposta => resposta.json())
-    // if (dados.message == "city not found" || dados.cod == "404") {
-    //     return dados
-    // }
+    if (dados.message == "city not found" || dados.cod == "404") {
+        return dados
+    }
 
     colocarNaTela(dados)
 }
