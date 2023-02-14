@@ -66,11 +66,12 @@ img {
     text-transform: capitalize;
 }
 
-.caixa-media span {
-    display: inline-block;
+.city-country {
+    display: flex;
 }
 
-.caixa-media p {
+
+.caixa-media p, span {
     font-size: 22px;
     font-weight: bold;
 }

@@ -20,8 +20,8 @@ async function buscarCidade(cidade) {
 
 function colocarNaTela(dados) {
     console.log(dados)
-    let cidadeLocal = document.querySelector(".local").innerHTML = dados.name
-    let teste = document.querySelector("#country").innerHTML = dados.sys.country
+    let cidadeLocal = document.querySelector(".local").innerHTML = dados.name + " -"
+    let teste = document.querySelector(".country").innerHTML = "- " + dados.sys.country
     let tempMin = document.querySelector(".temp-min").innerHTML = "Min: " + Math.floor(dados.main.temp_min) + "°C"
     let tempMax = document.querySelector(".temp-max").innerHTML = "Max: " + Math.floor(dados.main.temp_max) + "°C"
     let img = document.querySelector(".img-nuvem").src = "http://openweathermap.org/img/wn/" + dados.weather[0].icon + "@2x.png"
