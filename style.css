@@ -86,6 +86,10 @@ img {
     gap: 40px;
 }
 
+.local {
+    text-transform: initial;
+}
+
 @media (max-width: 470px) {
     .caixa-maior {
         width: 90%;
